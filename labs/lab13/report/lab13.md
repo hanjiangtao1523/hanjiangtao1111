@@ -113,7 +113,7 @@ POSIX (Portable Operating System Interface for Computer Environments) — наб
 
 Создаю файл с разрешением на исполнение (рис. @fig:001).
 
-![2023-2024/labs/lab11/report/image/01.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/01.png)
+![Название рисунка](image/1.png)
 
 Командный файл, c командами getopts и grep, который анализирует
 командную строку с ключами:
@@ -124,7 +124,7 @@ POSIX (Portable Operating System Interface for Computer Environments) — наб
 - -n — выдавать номера строк.
 а затем ищет в указанном файле нужные строки, определяемые ключом -p (рис. @fig:002).
 
-![2023-2024/labs/lab11/report/image/02.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/02.png)
+![Название рисунка](image/02.png)
 
 ```sh
 #! /bin/bash
@@ -156,17 +156,17 @@ grep $cf $nf $pval $ival >> $oval
 
 Результат работы программы в файле output.txt (рис. @fig:003).
 
-![2023-2024/labs/lab11/report/image/03.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/04.png)
+![Название рисунка](image/03.png)
 
 Создаю исполняемый файл для второй программы, также создаю файл 12.с для программы на Си (рис. @fig:004).
 
-![2023-2024/labs/lab11/report/image/04.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/04.png)
+![Название рисунка](image/04.png)
 
 Пишу программу на языке Си, которая вводит число и определяет, является ли оно
 больше нуля, меньше нуля или равно нулю. Затем программа завершается с помощью
 функции exit(n), передавая информацию в о коде завершения в оболочку (рис. @fig:005).
 
-![2023-2024/labs/lab11/report/image/05.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/05.png)
+![Название рисунка](image/05.png)
 
 ```c
 #include <stdlib.h>
@@ -189,8 +189,7 @@ int main () {
 
 Командный файл должен вызывать эту программу и, проанализировав с помощью команды
 $?, выдать сообщение о том, какое число было введено (рис. @fig:006).
-
-![2023-2024/labs/lab11/report/image/06.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/06.png)
+![Название рисунка](image/06.png)
 
 ```sh
 #! /bin/bash
@@ -207,17 +206,17 @@ esac
 
 Программа работает корректно (рис. @fig:007).
 
-![2023-2024/labs/lab11/report/image/07.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/07.png)
+![Название рисунка](image/07.png)
 
 Создаю исполняемый файл для третьей программы (рис. @fig:008).
 
-![2023-2024/labs/lab11/report/image/08.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/08.png)
+![Название рисунка](image/08.png)
 
 Командный файл, создающий указанное число файлов, пронумерованных
 последовательно от 1 до N (например 1.tmp, 2.tmp, 3.tmp,4.tmp и т.д.). Число файлов,
 которые необходимо создать, передаётся в аргументы командной строки. Этот же командный файл должен уметь удалять все созданные им файлы (если они существуют) (рис. @fig:009).
 
-![2023-2024/labs/lab11/report/image/09.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/09.png)
+![Название рисунка](image/09.png)
 
 ```sh
 #! /bin/bash
@@ -232,14 +231,14 @@ done
 
 Проверяю, что программа создала файлы и удалила их при соответствующих запросах (рис. @fig:010).
 
-![2023-2024/labs/lab11/report/image/10.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/10.png)
+![Название рисунка](image/10.png)
 
 Создаю исполняемый файл для четвертой программы. Это командный файл, который с помощью команды tar запаковывает в архив
 все файлы в указанной директории. Модифицировать его так, чтобы запаковывались
 только те файлы, которые были изменены менее недели тому назад (использовать
 команду find) (рис. @fig:011).
 
-![2023-2024/labs/lab11/report/image/11.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/11.png)
+![Название рисунка](image/11.png)
 
 ```sh
 #! /bin/bash
@@ -249,7 +248,7 @@ tar -cf archive.tar -T FILES.txt
 
 Проверяю работу программы (рис. @fig:012).
 
-![2023-2024/labs/lab11/report/image/12.png at master · wangyuanxing1/2023-2024 (github.com)](https://github.com/wangyuanxing1/2023-2024/blob/master/labs/lab11/report/image/12.png)
+![Название рисунка](image/12.png)
 
 # Выводы
 
